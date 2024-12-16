@@ -1,0 +1,204 @@
+.home-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 4rem;
+    background: #fafafa;
+    margin: 1rem 3rem;
+    padding-top: 2px;
+    /* margin-top: 1rem; */
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0px 15px 30px #8a959e33;
+    
+}
+
+.home-layout1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* background: red; */
+    padding:0.5rem 0;
+}
+.home-image-layout{
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #1687d9;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.principal-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+.image-name-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image-name-layout > h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.home-layout2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* background: red; */
+    align-items: center;
+    justify-content: center;
+}
+.home-message-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #1687d9;
+}
+.home-message-heading > h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.home-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    gap: 1rem;
+}
+.home-message > h1 {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.home-layout3 {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    
+    /* gap: 4rem; */
+    background: #fafafa;
+    margin: 1rem 3rem;
+    padding-top: 2px;
+    /* margin-top: 1rem; */
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 0px 15px 30px #8a959e33;
+}
+
+.home-message-heading3{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    /* border-color: black; */
+    /* border-width: 2px; */
+}
+
+.home-message-heading3 > h1{
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1687d9;
+}
+
+.home-message3{
+    /* margin: 10px 0 10px 10px; */
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.home-message3 > h1{
+    font-size: 1.2rem;
+
+}
+
+.home-layout4 {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    
+    /* gap: 4rem; */
+    background: #fafafa;
+    margin: 1rem 3rem;
+    padding-top: 2px;
+    /* margin-top: 1rem; */
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px #8a959e33;
+}
+
+.home-heading4{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 0.5rem;
+    margin-left: 1rem;
+}
+
+.home-heading4 > h1{
+    font-size: 2rem;
+    color: #1687d9;
+}
+
+.download4{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.download4 > a{
+    margin-left: 10px;
+    text-decoration: overline;
+    text-decoration: solid;
+}
+@media(max-width : 576px) {
+    .home-wrapper{
+        margin: 1rem 1rem;
+        gap: 1rem;
+    }
+    .home-image-layout{
+        display: flex;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #1687d9;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .principal-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: auto;
+    }
+    .home-layout2{
+        width: 90%;
+        padding-bottom: 1rem;
+    }
+    .home-message-heading > h1,
+    .home-message-heading3 > h1 {
+        font-size: 1.2rem;
+    }
+    .home-message > h1,
+    .home-message3 >h1 {
+        font-size: 100%;
+    }
+    .home-layout3,.home-layout4{
+        margin: 1rem 1rem;
+    }
+    .home-layout4{
+        padding-bottom: 0.5rem;
+    }
+    .home-heading4 > h1 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}

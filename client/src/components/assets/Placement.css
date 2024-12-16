@@ -1,0 +1,40 @@
+.placement-heading {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin: 1rem 0 0 2rem;
+    font-weight:bold ;
+}
+.table-wrapper{
+    background-color: #fafafa;
+    box-shadow: 0px 15px 30px #8a959e33;
+    margin: 1rem auto 3rem ;
+}
+.table-head{
+    background: #1687D9;
+    color: #fafafa;
+}
+table{
+    border-collapse: collapse;
+}
+
+
+@media(max-width:576px) {
+    .table-wrapper{
+        margin: 0.5rem 0 1rem 1rem;
+    }
+    .placement-heading{
+        font-size: 1rem;
+        margin: 0.5rem 0 0 1rem;
+    }
+    #table-heading{
+        font-size: 0.8rem;
+        padding-left:3px;
+    }
+    #table-row-heading{
+        font-size: 0.7rem;
+    }
+    #serialno{
+        padding-left:5px;
+    }
+}
+ 

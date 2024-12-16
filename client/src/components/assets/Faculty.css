@@ -1,0 +1,236 @@
+.wrapper{
+  /* width: min-content; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap:5px; */
+  /* justify-content: safe; */
+  /* justify-content:space-around; */
+}
+.main-section {
+  font-family: sans-serif;
+  /* margin: 0 auto; */
+  /* padding: 1rem 0px 0px 1rem; */
+  width: 375px;
+  /* max-width: 375px;
+  min-width: 375px; */
+  /* background-color: #dfe6e9; */
+  text-align: center;
+  margin-bottom: 0.5rem ;
+  
+}
+
+.faculty-heading {
+  font-size: 1.5rem;
+  color: #2d3436;
+  margin: 1rem 0 0 1rem;
+  font-weight:bold ;
+  padding-left: 1rem;
+}
+.member-heading {
+  font-size: 1.3rem;
+  color: #2d3436;
+  margin: 1rem 0 0 1rem;
+  font-weight:bold ;
+  padding-left: 1rem;
+}
+
+.card {
+  border-radius: 25px;
+  position: relative;
+  padding: 25px 15px;
+  background-color: hsla(0, 0%, 100%, 0.515);
+  /* background-color: #97cff8; */
+  /* margin: 50px 0; */
+  /* height: 200px; */
+  /* box-shadow: 0 2px 5px #ccc; */
+  box-shadow: 0px 15px 30px #8a959e33;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.top {
+  border-radius: 25px 25px 0 0;
+  height: 100px;
+  /* max-height: 120px; */
+  width: 100%;
+  /* background-color: #fff; */
+  background-color: #1687D9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  /* border: 5px solid #1687D9; */
+  justify-content: space-between;
+}
+.top-details {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* margin-right: 30px; */
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.name {
+  font-size: 1.3rem;
+  color: #000;
+  /* display: flex; */
+  /* flex: 1; */
+  width: 100%;
+  margin: 5% 10px 0;
+  /* line-height: 1.4rem; */
+  /* padding: 5px; */
+  /* gap: 10px; */
+  text-align: center;
+  font-weight: 600;
+}
+.faculty-intro{
+  font-size: 15px;
+  color: #3a3838;
+  /* display: flex; */
+  /* flex: 1; */
+  width: 100%;
+  margin: 8px 5px 0 ;
+  /* padding: 5px; */
+  /* gap: 10px; */
+  text-align: center;
+  font-weight: bold;
+
+}
+.faculty-intro > h4 {
+  padding-left:0.8rem;
+}
+
+
+.card .circle-img {
+  margin: 30px 8px 0 0;
+  /* margin: 30px 8px 0 65%; */
+}
+
+.circle-img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+}
+
+.bottom {
+  margin-top: 120px;
+}
+
+.info {
+  margin: 20px 0;
+  color: #1a7e76;
+}
+.phone {
+  width: 78%;
+  background-color: #e5e5e5;
+  /* cursor: pointer; */
+  height: 32px;
+  display: flex;
+  margin-top: 1.3rem;
+  align-items: center;
+  /* margin-left: auto; */
+  margin-right: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  color: #303030;
+}
+
+.email {
+  width: 78%;
+  background-color: #e5e5e5;
+  cursor: pointer;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  /* margin-left: auto; */
+  margin-right: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+}
+.email a {
+  text-decoration: none;
+  color: #303030;
+}
+
+.email:hover {
+  box-shadow: 0px 2px 5px #1687D9;
+}
+
+.phone img,
+.email img {
+  margin-left: 10px;
+}
+.phone>h3,
+.email>h3 {
+  display: block;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@media (max-width:576px) {
+  .wrapper{
+    justify-content: center;
+  }
+  .main-section{
+    width: 300px;
+  }
+  .faculty-heading{
+    font-size: 1rem;
+  }
+  .member-heading{
+    font-size: 0.9rem;
+  }
+  .name{
+    font-size: 100%;
+  }
+  .circle-img{
+    width: 100px;
+    height: 100px;
+  }
+  .email{
+    width: 90%;
+  }
+  .phone >h3 ,
+  .email > h3 {
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media(min-width:572px) and (max-width :993px) {
+  .wrapper{
+    justify-content: space-around;
+  }
+  .main-section{
+    width: 380px;
+  }
+  .faculty-heading{
+    font-size: 1.1rem;
+  }
+  .member-heading{
+    font-size: 100%;
+  }
+  .name{
+    font-size: 100%;
+  }
+  .circle-img{
+    width: 100px;
+    height: 100px;
+  }
+  .email{
+    width: 90%;
+  }
+  .phone >h3 ,
+  .email > h3 {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,147 @@
+.hover:hover {
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px #1687D9;
+    color: #1687D9;
+
+}
+
+
+
+.pressed:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.explore-heading{
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin: 1rem 0 0 2rem;
+    font-weight:bold ;
+}
+
+.explore-main-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+/* .explore-wrapper{
+    width: 25%;
+    min-width: 250px;
+} */
+
+.explore {
+    background-color: #fff;
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 400px;
+    /* min-width: 350px; */
+    box-shadow: 0px 15px 30px #8a959e33;
+    margin-left: 2rem;
+
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.record-logo {
+    display: flex;
+    background-color: #E5E5E5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.record img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.recruiter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1vw; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recruiter-logo {
+    display: flex;
+    background-color: #E5E5E5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.record img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.record .btn,
+.recruiter .btn {
+    width: 100%;
+    border: 2px solid #1687d9;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+@media (max-width:576px ){
+    .explore-heading{
+        font-size: 14px;
+    }
+    .explore-main-wrapper{
+        justify-content: center;
+    }
+
+    .explore{
+        width: 270px;
+        margin-left: 0;
+    }
+    .record-logo , .recruiter-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .record-logo > img {
+        width: 25px;
+        height: 25px;
+    }
+    .text-text{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:992px){
+    .explore-main-wrapper{
+        justify-content: center;
+    }
+}

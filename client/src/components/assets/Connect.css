@@ -1,0 +1,148 @@
+.hover:hover {
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px #1687D9;
+    color: #1687D9;
+
+}
+
+
+
+.pressed:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.connect-heading {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin: 1rem 0 0 1rem;
+    font-weight: bold;
+}
+
+.connect {
+    background-color: #fff;
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    min-width: 250px;
+    box-shadow: 0px 15px 30px #8a959e33;
+    margin-left: 1rem;
+
+}
+
+.connect1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 8px; */
+    width: 90%;
+    margin: auto;
+}
+
+.connect1-logo {
+    display: flex;
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect1-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.text {
+    display: block;
+    width: 65%;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 0.9rem;
+
+}
+
+.text-text {
+    font-size: 15px;
+    padding: 10px 0 0 10px;
+}
+
+.connect1 .btn,
+.connect2 .btn {
+    width: 100%;
+    border: 2px solid #1687d9;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+a .btn {
+    text-decoration: none;
+    color: #1687D9;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.connect2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1vw; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connect2-logo img {
+    width: 60px;
+    height: 60px;
+
+}
+
+@media(max-width:576px) {
+    .connect {
+        width: 80%;
+        margin: 1rem auto;
+
+    }
+
+    .connect-heading {
+        font-size: 0.9rem;
+    }
+
+    .connect1-logo,
+    .connect2-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .connect1-logo>img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .connect2-logo>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    a .btn {
+        font-size: 0.8rem;
+    }
+
+}
