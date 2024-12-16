@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./assets/Login.css";
 
@@ -37,6 +37,20 @@ function Login() {
       })
       .catch((err) => console.log(err));
   };
+
+
+  //*If already logged In
+  const isAuthenticated = () => {
+    if (localStorage.getItem("token")) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  if(isAuthenticated()){
+    return <Navigate to={"/"}/>
+  }
 
   return (
     <div>

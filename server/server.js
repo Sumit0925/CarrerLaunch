@@ -10,13 +10,15 @@ const Post = require("./models/Post.model");
 
 const app = express();
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["http://localhost:5173"],
-    methods: ["GET", "POST","DELETE"],
-    credentials: true,
-  })
-);
+
+const corsOptions = {
+  origin: "http://localhost:5173",
+  methods: ["GET","POST","DELETE"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 app.use(cookieParser());
 
 mongoose.connect(
@@ -214,7 +216,6 @@ app.post("/register", async (req, res) => {
 //     }
 //   });
 // };
-
 
 app.listen(3001, () => {
   console.log("running");

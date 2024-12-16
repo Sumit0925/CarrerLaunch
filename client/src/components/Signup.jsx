@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./assets/Signup.css";
@@ -42,6 +42,19 @@ function Signup() {
       })
       .catch((err) => console.log(err));
   };
+
+    //*If already Registered
+    const isAuthenticated = () => {
+      if (localStorage.getItem("token")) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+  
+    if(isAuthenticated()){
+      return <Navigate to={"/"}/>
+    }
 
   return (
     <div className="register-wrapper">

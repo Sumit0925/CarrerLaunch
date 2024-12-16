@@ -27,6 +27,7 @@ import Placement2021 from "./components/Pages/Placement2021";
 import Placement2020 from "./components/Pages/Placement2020";
 import Placement2023 from "./components/Pages/Placement2023";
 import Footer from "./components/Footer";
+import { Error } from "./components/Pages/Error";
 
 function App() {
   const [showSidebar, SetShowSidebar] = useState(true);
@@ -73,6 +74,7 @@ function App() {
               <Route path="/placement-20" exact={true} element={<Placement2020 />} />
               <Route path="/activities" exact={true} element={<Activities />} />
               <Route path="/upcoming-activities" exact={true} element={<UpcomingActivities />} />
+              <Route path="*" exact={true} element={<Error/>} />
             
               
             </Routes>
@@ -80,7 +82,7 @@ function App() {
           </div>
           
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   );
